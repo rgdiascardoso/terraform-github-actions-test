@@ -12,7 +12,7 @@ jobs:
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
-        tf_actions_working_dir: 'terraform\'
+        tf_actions_working_dir: 'terraform'
         tf_actions_subcommand: 'init'
       env:
         ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
@@ -23,5 +23,5 @@ jobs:
       uses: hashicorp/terraform-github-actions@master
       with:
         tf_actions_version: 0.12.13
-        tf_actions_working_dir: 'terraform\'
+        tf_actions_working_dir: 'terraform'
         tf_actions_subcommand: 'apply'
